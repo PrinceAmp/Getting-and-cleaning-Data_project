@@ -1,1 +1,85 @@
 
+Intro
+run_analysis.R answers the 5 questions asked in the getting and cleaning data course.
+
+the sets of code does the following, in order.
+#1. the code loads the raw data sets and then rBinds the xTrain to the xTest. Then rBinds yTrain to yTest. and then rBinds the train and test data sets.
+
+#2. extracts a subset based on the vector to keep on the Mean and standard deviation.
+
+#3. This just names activities "Activity"
+
+#4. this cleans up the names of the columns (variables)
+
+#5. writes the table to txt file named 'tidyData'
+
+the final results has variables as follow
+
+1 TimeDomain.Body_.Accelerationeleration.Mean...X
+2 TimeDomain.Body_.Accelerationeleration.Mean...Y
+3 TimeDomain.Body_.Accelerationeleration.Mean...Z
+4 TimeDomain.Body_.Accelerationeleration.StandardDeviation...X
+5 TimeDomain.Body_.Accelerationeleration.StandardDeviation...Y
+6 TimeDomain.Body_.Accelerationeleration.StandardDeviation...Z
+7 TimeDomain.Gravity__..Accelerationeleration.Mean...X
+8 TimeDomain.Gravity__..Accelerationeleration.Mean...Y
+9 TimeDomain.Gravity__..Accelerationeleration.Mean...Z
+10  TimeDomain.Gravity__..Accelerationeleration.StandardDeviation...X
+11  TimeDomain.Gravity__..Accelerationeleration.StandardDeviation...Y
+12  TimeDomain.Gravity__..Accelerationeleration.StandardDeviation...Z
+13  TimeDomain.Body_.AccelerationelerationJerk.Mean...X
+14  TimeDomain.Body_.AccelerationelerationJerk.Mean...Y
+15  TimeDomain.Body_.AccelerationelerationJerk.Mean...Z
+16  TimeDomain.Body_.AccelerationelerationJerk.StandardDeviation...X
+17  TimeDomain.Body_.AccelerationelerationJerk.StandardDeviation...Y
+18  TimeDomain.Body_.AccelerationelerationJerk.StandardDeviation...Z
+19  TimeDomain.Body_.AngularSpeed.Mean...X
+20  TimeDomain.Body_.AngularSpeed.Mean...Y
+21  TimeDomain.Body_.AngularSpeed.Mean...Z
+22  TimeDomain.Body_.AngularSpeed.StandardDeviation...X
+23  TimeDomain.Body_.AngularSpeed.StandardDeviation...Y
+24  TimeDomain.Body_.AngularSpeed.StandardDeviation...Z
+25  TimeDomain.Body_.AngularAccelerationeleration.Mean...X
+26  TimeDomain.Body_.AngularAccelerationeleration.Mean...Y
+27  TimeDomain.Body_.AngularAccelerationeleration.Mean...Z
+28  TimeDomain.Body_.AngularAccelerationeleration.StandardDeviation...X
+29  TimeDomain.Body_.AngularAccelerationeleration.StandardDeviation...Y
+30  TimeDomain.Body_.AngularAccelerationeleration.StandardDeviation...Z
+31  TimeDomain.Body_.AccelerationelerationMagnitude.Mean..
+32  TimeDomain.Body_.AccelerationelerationMagnitude.StandardDeviation..
+33  TimeDomain.Gravity__..AccelerationelerationMagnitude.Mean..
+34  TimeDomain.Gravity__..AccelerationelerationMagnitude.StandardDeviation..
+35  TimeDomain.Body_.AccelerationelerationJerkMagnitude.Mean..
+36  TimeDomain.Body_.AccelerationelerationJerkMagnitude.StandardDeviation..
+37  TimeDomain.Body_.AngularSpeedMagnitude.Mean..
+38  TimeDomain.Body_.AngularSpeedMagnitude.StandardDeviation..
+39  TimeDomain.Body_.AngularAccelerationelerationMagnitude.Mean..
+40  TimeDomain.Body_.AngularAccelerationelerationMagnitude.StandardDeviation..
+41  FrequencyDomain.Body_Accelerationeleration.Mean...X
+42  FrequencyDomain.Body_Accelerationeleration.Mean...Y
+43  FrequencyDomain.Body_Accelerationeleration.Mean...Z
+44  FrequencyDomain.Body_Accelerationeleration.StandardDeviation...X
+45  FrequencyDomain.Body_Accelerationeleration.StandardDeviation...Y
+46  FrequencyDomain.Body_Accelerationeleration.StandardDeviation...Z
+47  FrequencyDomain.Body_AccelerationelerationJerk.Mean...X
+48  FrequencyDomain.Body_AccelerationelerationJerk.Mean...Y
+49  FrequencyDomain.Body_AccelerationelerationJerk.Mean...Z
+50  FrequencyDomain.Body_AccelerationelerationJerk.StandardDeviation...X
+51  FrequencyDomain.Body_AccelerationelerationJerk.StandardDeviation...Y
+52  FrequencyDomain.Body_AccelerationelerationJerk.StandardDeviation...Z
+53  FrequencyDomain.Body_AngularSpeed.Mean...X
+54  FrequencyDomain.Body_AngularSpeed.Mean...Y
+55  FrequencyDomain.Body_AngularSpeed.Mean...Z
+56  FrequencyDomain.Body_AngularSpeed.StandardDeviation...X
+57  FrequencyDomain.Body_AngularSpeed.StandardDeviation...Y
+58  FrequencyDomain.Body_AngularSpeed.StandardDeviation...Z
+59  FrequencyDomain.Body_AccelerationelerationMagnitude.Mean..
+60  FrequencyDomain.Body_AccelerationelerationMagnitude.StandardDeviation..
+61  FrequencyDomain.Body_BodyAccelerationelerationJerkMagnitude.Mean..
+62  FrequencyDomain.Body_BodyAccelerationelerationJerkMagnitude.StandardDeviation..
+63  FrequencyDomain.Body_BodyAngularSpeedMagnitude.Mean..
+64  FrequencyDomain.Body_BodyAngularSpeedMagnitude.StandardDeviation..
+65  FrequencyDomain.Body_BodyAngularAccelerationelerationMagnitude.Mean..
+66  FrequencyDomain.Body_BodyAngularAccelerationelerationMagnitude.StandardDeviation..
+67  Activity
+68  Subject
